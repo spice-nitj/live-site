@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spice Society</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+        integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body onload="slider()">
+    <div class="banner">
+        <div class="slider">
+            <img src="./images/nitj.png" alt="" id="slider_img">
+        </div>
+        <div class="overlay">
+            <div class="navbar-section">
+                <div class="logo">
+                    <a href=""><img src="./images/logo.png" alt=""></a>
+                </div>
+                <div class="menu_links">
+                    <i class="fas fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="#new_event">EVENTS</a></li>
+                        <li><a href="team.html">TEAM</a></li>
+                    </ul>
+                </div>
+                <i class="fas fa-bars" onclick="showMenu()"></i>
+            </div>
+
+            <div class="content">
+                <h1 class="text-white">SPICE SOCIETY</h1>
+                <p>Lets Make Tech Spicy</p>
+                <a href="https://www.nitj.ac.in/" target="_blank" class="btn2 text-white"> NITJ Official &nbsp;>></a>
+                <p class="department">Department of Instrumentation and Control <br>NIT Jalandhar</p>
+            </div>
+        </div>
+    </div>
+
+    <!--------------------- Introduction section --------------------->
+
+    <section class="about_us">
+        <div class="row2">
+            <div class="about_col column2">
+                <h1>SPICE SOCIETY</h1>
+                <span>Lets Make Tech Spicy</span>
+                <p>
+                    Society for Progression of Instrumentation and Control
+                    Engineering <b>(SPICE)</b> is a society which was established in the department
+                    of Instrumentation and Control Engineering (ICE), Dr. B. R. Ambedkar National Institute
+                    of Technology, Jalandhar formed on December 1, 1994.
+                </p>
+                <p>The society is continuously
+                    working for the welfare of students of Instrumentation and Control Engineering. A number
+                    of events have been organized under this society such as expert lectures from industry,
+                    workshops on <b>robotics, career guidance & industrial tours</b>.
+                </p>
+                <a href="about.html" class="btn2 explore">Explore More ></a>
+            </div>
+            <div class="about_col">
+                <img src="images/slider3.webp" alt="about us">
+            </div>
+        </div>
+    </section>
+
+    <!---------------Faculty Advisor-------------------->
+
+    <div class="demo">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <span class="top-icon">
+                        <h1>Our Faculty Advisor</h1>
+                    </span>
+                    <div id="testimonial-slider">
+                        <div class="testimonial">
+                            <div class="pic">
+                                <div class="box">
+                                    <img src="./images/afzal_sir2.png" alt="">
+                                    <div class="info">
+                                        <div class="name">Afzal Sikander</div>
+                                        <div class="social_link">
+                                            <a href="https://www.linkedin.com/in/afzalsikander" target="_blank"><i
+                                                    class="fab fa-linkedin"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial-content">
+                                <p class="description">
+                                    We have come a long way since last few years, but there is a long way to go, heights
+                                    to reach and responsibilities to carry. This institute has germinated various seeds
+                                    in the field of Instrumentation and Control.
+                                </p>
+                                </p>
+                                <p class="description">With the launch of events under such a dedicated club, we aim to
+                                    grow at an exponential pace. But as it quoted <b>"Facts not at all matter,
+                                        Perception is Everything"</b>.
+                                </p>
+                                <h3>Dr. Afzal Sikander</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="bottom-icon"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- #### -->
+    <!-- New Section Added here -->
+    <!----------------- Upcoming Events Section -------------------->
+
+    <!-- <section class="pt-5">
+        <div class="container">
+            <h1 class="text-center pb-4 text-black"><b>Upcoming Events</b></h1>
+            <div class="events_section">
+                <div class="slider-card w-50 m-auto" id="new_event" style="opacity:1;">
+                    <div class="d-flex justify-content-center align-items-center mb-4">
+                        <img src="images/SPICE_interview2.png" alt="">
+                    </div>
+                    <h3 class="mb-0 text-center"><b>Interview Experience</b></h3>
+                    <p class="text-center p-3 mb-0">
+                        Sarthak Saxena and Rachit R Jindal will be the day's speakers.They'll talk about their interview
+                        experiences and provide essential learnings on how to do well in them.
+                        <br>
+                    </p>
+                    <h6 class="fw-semi-bold mb-3" style="text-align:center;">More Details in the Form 👇</h6>
+                    <a href="https://forms.gle/iRDEL8VAxwrLB5Db8" target="_blank" class="register">Register Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!----------------- Past Events Section -------------------->
+
+    <section id="slider" class="pt-5">
+        <div class="container">
+            <h1 class="text-center pb-4 text-black"><b>Our Events</b></h1>
+            <div class="events_section">
+                <div class="owl-carousel">
+                    <div class="slider-card" id="new_event" style="opacity:1;">
+                        <div class="d-flex justify-content-center align-items-center mb-4">
+                            <img src="images/SPICE_interview2.png" alt="">
+                        </div>
+                        <h3 class="mb-0 text-center"><b>Interview Experience</b></h3>
+                        <p class="text-center p-3 mb-0">
+                            Sarthak Saxena and Rachit R Jindal will be the day's speakers.They'll talk about their
+                            interview
+                            experiences and provide essential learnings on how to do well in them.
+                            <br>
+                        </p>
+                        <!-- <h6 class="fw-semi-bold mb-3" style="text-align:center;">More Details in the Form 👇</h6> -->
+                        <!-- <a href="https://forms.gle/iRDEL8VAxwrLB5Db8" target="_blank" class="register">Register Now -->
+                        </a>
+                    </div>
+                    <div class="slider-card" id="new_event" style="opacity:1;">
+                        <div class="d-flex justify-content-center align-items-center mb-4">
+                            <img src="images/10092022.png" alt="">
+                        </div>
+                        <h5 class="mb-0 text-center"><b>Why Should you be hired?</b></h5>
+                        <p class="text-center p-3 mb-0">
+                            The speaker for the session is Mr. Vipin Gupta, Project Safety Manager at Robert Bosch GmbH,
+                            Germany, commonly known as Bosch.
+                            <br>
+                        </p>
+                        <!-- <h6 class="fw-semi-bold mb-3" style="text-align:center;">More Details in the Form 👇</h6>
+                        <a href="https://forms.gle/yi8wHhoDbkYfPvz89" target="_blank" class="register">Register Now
+                        </a> -->
+                    </div>
+
+                    <div class="slider-card" id="new_event">
+                        <div class="d-flex justify-content-center align-items-center mb-4">
+                            <img src="images/Event poster.jpeg" alt="">
+                        </div>
+                        <h5 class="mb-0 text-center"><b>How to Invest in your 20s?</b></h5>
+                        <p class="text-center p-3 mb-0">SPICE Society is organising a financial talk by Anmol Sharma, an
+                            NIT Jalandhar Alumni.
+                            <br>
+                            He is a financial educator and founder of Finlight, a media and content company.<br>
+                        </p>
+                        <!-- #### -->
+                        <!-- Remove the registration link for the old event -->
+                    </div>
+
+                    <div class="slider-card">
+                        <div class="d-flex justify-content-center align-items-center mb-4">
+                            <img src="images/event3 (1).jpeg" alt="">
+                        </div>
+                        <h5 class="mb-0 text-center"><b>Micro Robo Wars</b></h5>
+                        <p class="text-center p-3 mb-0">SPICE Society in association with TechNITi organizes Micro
+                            Robotic War Competitions. Top contestants are rewarded with cash prizes and cool
+                            vouchers.<br>
+                        </p>
+                    </div>
+
+                    <div class="slider-card">
+                        <div class="d-flex justify-content-center align-items-center mb-4">
+                            <img src="images/event3 (3).jpeg" alt="">
+                        </div>
+                        <h5 class="mb-0 text-center"><b>Tricky Circuits</b></h5>
+                        <p class="text-center p-3 mb-0">A battlefield for the intelligent species of Instrumentation
+                            Engineering, SPICE organizes quizzes under the Tricky Circuits program. It include amazing
+                            events related to circuit design.<br>
+                        </p>
+                    </div>
+                    <div class="slider-card">
+                        <div class="d-flex justify-content-center align-items-center mb-4">
+                            <img src="images/Event_Poster.jpeg" alt="">
+                        </div>
+                        <h5 class="mb-0 text-center"><b>Expert Lecture </b></h5>
+                        <p class="text-center p-3 mb-0">Expert Lecture on New Technologies and Renewable Energy-Based
+                            Electromobility by Dr. Marta Zurek-Mortka from
+                            Lukasiewicz Research Network....<br>
+                        </p>
+                    </div>
+                    <div class="slider-card">
+                        <div class="d-flex justify-content-center align-items-center mb-4">
+                            <img src="images/event3 (2).jpeg" alt="">
+                        </div>
+                        <h5 class="mb-0 text-center"><b>Soft Skills and Personality Development</b></h5>
+                        <p class="text-center p-3 mb-0">SPICE organized "Soft Skills and Personality Development"
+                            workshop lead by Dale Carnegie and Erickson Certified Coach Suman Kher..<br>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!----------------- Contact US section -------------------->
+
+    <section class="contact">
+        <h1>Follow Us To Get All The <br>LATEST UPDATES</h1>
+        <div class="icons">
+            <a href="https://twitter.com/NitjSpice" target="_blank"><i class="fab fa-twitter"></i></a>
+            <!-- <a href=""><i class="fab fa-facebook" target="_blank"></i></a> -->
+            <a href="https://instagram.com/spice_society_nitj?utm_medium=copy_link" target="_blank"><i
+                    class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/spice-society-nit-jalandhar/?viewAsMember=true" target="_blank"><i
+                    class="fab fa-linkedin"></i></a>
+        </div>
+        <a href="mailTo:spice@nitj.ac.in" target="_blank" class="btn2 text-white">CONTACT US</a>
+    </section>
+
+    <!-- Full Width Image -->
+    <section class="full-img">
+        <h1>The FAM ❤️</h1>
+    </section>
+
+
+    <!--------------Footer Section ----------->
+    <section class="footer" id="footer">
+        <h4>About Us</h4>
+        <p>Society for Progression of Instrumentation and Control
+            Engineering <b>(SPICE)</b> <br> A society which was established in the department of Instrumentation and
+            Control Engineering (ICE) NIT Jalandhar
+        </p>
+        <div class="icons social">
+            <a href="https://twitter.com/NitjSpice" target="_blank"><i class="fab fa-twitter"></i></a>
+            <!-- <a href=""><i class="fab fa-facebook" target="_blank"></i></a> -->
+            <a href="https://instagram.com/spice_society_nitj?utm_medium=copy_link" target="_blank"><i
+                    class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/spice-society-nit-jalandhar/?viewAsMember=true" target="_blank"><i
+                    class="fab fa-linkedin"></i></a>
+        </div>
+        <!-- #### -->
+        <!-- Name Changed here -->
+        <h5>Contact Us - Dr. Afzal Sikander</h5>
+        <p>Email Id: spice@nitj.ac.in</p>
+        <br>
+        <p>Copyright &copy; 2022 | All rights reserved, SPICE NIT Jalandhar - 144011</p>
+    </section>
+
+
+    <!-- Events End-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+
+    <script>
+        var slideIng = document.querySelector("#slider_img");
+
+        var images = new Array(
+            "./images/nitj.png",
+            "./images/icebuild2.jpg",
+            "./images/nitj.png",
+            "./images/icebuild2.jpg"
+        );
+
+        var len = images.length;
+        var i = 0;
+
+        function slider() {
+            if (i > len - 1) {
+                i = 0;
+            }
+            slideIng.src = images[i];
+            i++;
+            setTimeout('slider()', 3000);
+        }
+
+        var navlinks = document.querySelector('.menu_links');
+
+        function showMenu() {
+            navlinks.style.right = '0';
+        }
+        function hideMenu() {
+            navlinks.style.right = '-200px';
+        }
+    </script>
+</body>
+
+</html>
