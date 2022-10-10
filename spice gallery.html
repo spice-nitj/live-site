@@ -1,0 +1,354 @@
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css"/>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
+	<script src="js/script.js"></script>
+<style>
+    *{
+	padding:0;
+	margin:0;
+}
+
+body{
+    background-color: #c5dff5 !important;
+    overflow-x: hidden;
+}
+/*	general	*/
+
+section{
+    padding: 50px 0;
+}
+
+/*	gallery */
+
+/* .gallery-title{
+    font-size: 36px;
+    color: #3F6184;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 70px;
+} */
+
+.portfolio{
+    margin: auto;
+}
+
+.gallery-title {
+  padding-top: 0;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* CSS */
+.filter-button {
+  align-items: center;
+  appearance: none;
+  background-color: #fff;
+  border-radius: 24px;
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+  box-sizing: border-box;
+  color: #3c4043;
+  cursor: pointer;
+  display: inline-flex;
+  fill: currentcolor;
+  font-family: "Google Sans",Roboto,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: .25px;
+  line-height: normal;
+  max-width: 100%;
+  overflow: visible;
+  padding: 2px 24px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+  will-change: transform,opacity;
+  z-index: 0;
+}
+
+.filter-button:hover {
+  background: #F6F9FE;
+  color: #174ea6;
+}
+
+.filter-button:active {
+  box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+  outline: none;
+}
+
+.filter-button:focus {
+  outline: none;
+  border: 2px solid #4285f4;
+}
+
+.filter-button:not(:disabled) {
+  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.filter-button:not(:disabled):hover {
+  box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+}
+
+.filter-button:not(:disabled):focus {
+  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.filter-button:not(:disabled):active {
+  box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+}
+
+.filter-button:disabled {
+  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+    /* .filter-button{
+        font-size: 18px;
+        border: 2px solid #3F6184;
+        padding:5px 10px;
+        text-align: center;
+        color: #3F6184;
+        margin-bottom: 30px;
+        background:transparent;   
+    }
+    .filter-button:hover,
+    .filter-button:focus,
+    .filter-button.active{
+        color: #ffffff;
+        background-color:#3F6184;
+        outline:none;
+    } */
+.gallery_product{
+    margin: 0px;
+	padding:1.5px;
+	position:relative;
+    filter: drop-shadow(2px 2px 0.5rem #797979b8);
+}
+.gallery_product .img-info{
+	position: absolute;
+    background: rgba(0,0,0,0.5);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+	overflow:hidden;
+	color:#fff;
+	top:0;
+	display:none;
+	   -webkit-transition: 2s;
+    transition: 2s;
+}
+
+.gallery_product:hover .img-info{
+	display:block;
+   -webkit-transition: 2s;
+    transition: 2s;
+}
+.portfolio{
+    margin: auto;
+    padding: auto;
+}
+.row{
+    margin: auto;
+    padding: auto;
+}
+
+/*	end gallery */
+</style>
+<body>
+
+<section class="portfolio" id="portfolio">
+	<div class="container-fluid ">
+		<div class="row" style="width: 85%; margin: auto;">
+
+			<div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<h1 class="gallery-title">SPICE GALLERY</h1>
+			</div>
+
+			<div align="center">
+				<button class="filter-button" data-filter="all">All</button>
+				<button class="filter-button" data-filter="category1">Afzal Sir </button>
+				<button class="filter-button" data-filter="category2">Group Photo</button>
+				<button class="filter-button" data-filter="category3">Speakers</button>
+			</div>
+			
+			<br/>
+
+        
+
+            <div class="gallery_product col-sm-3 col-xs-6 filter category1">
+                <a class="fancybox" rel="ligthbox" href="/images/afzal sir.jpg">
+                    <img class="img-responsive" alt="" src="/images/afzal sir.jpg" />
+                    <div class='img-info'>
+                        <!-- <h4>Afzal Sir</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+                    </div>
+                </a>
+            </div>
+
+            <div class="gallery_product col-sm-3 col-xs-6 filter category2">
+                <a class="fancybox" rel="ligthbox" href="/images/group photo 1.jpg">
+                    <img class="img-responsive" alt="" src="/images/group photo 1.jpg" />
+                    <div class='img-info'>
+                        <!-- <h4>Image Title 2</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+                    </div>
+                </a>
+            </div>
+
+            <div class="gallery_product col-sm-3 col-xs-6 filter category3">
+                 <a class="fancybox" rel="ligthbox" href="/images/sitting and lsitening back.jpg">
+                    <img class="img-responsive" alt="" src="/images/sitting and lsitening back.jpg" />
+                    <div class='img-info'>
+                        <!-- <h4>Image Title 3</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+                    </div>
+                </a>
+            </div>
+
+            <div class="gallery_product col-sm-3 col-xs-6 filter category1">
+                <a class="fancybox" rel="ligthbox" href="/images/afzal sir speak.jpg">
+                    <img class="img-responsive" alt="" src="/images/afzal sir speak.jpg"/>
+                    <div class='img-info'>
+                        <!-- <h4>Image Title 4</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+                    </div>
+                </a>
+            </div>
+
+            <div class="gallery_product col-sm-3 col-xs-6 filter category2">
+                <a class="fancybox" rel="ligthbox" href="/images/group photo 2.jpg">
+                    <img class="img-responsive" alt="" src="/images/group photo 2.jpg" />
+                    <div class='img-info'>
+                        <!-- <h4>Image Title 5</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+                    </div>
+                </a>
+            </div>
+
+            <div class="gallery_product col-sm-3 col-xs-6 filter category3">
+                <a class="fancybox" rel="ligthbox" href="/images/nikhil speak along 4.jpg">
+                    <img class="img-responsive" alt="" src="/images/nikhil speak along 4.jpg" />
+                    <div class='img-info'>
+                        <!-- <h4>Image Title 6</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+                    </div>
+                </a>
+            </div>
+
+            <div class="gallery_product col-sm-3 col-xs-6 filter category1">
+                <a class="fancybox" rel="ligthbox" href="/images/afzal sir with 3.jpg">
+                    <img class="img-responsive" alt="" src="/images/afzal sir with 3.jpg" />
+                    <div class='img-info'>
+                        <!-- <h4>Image Title 7</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+                    </div>
+                </a>
+            </div>
+
+            <div class="gallery_product col-sm-3 col-xs-6 filter category2">
+                <a class="fancybox" rel="ligthbox" href="/images/group photo 3.jpg">
+                    <img class="img-responsive" alt="" src="/images/group photo 3.jpg" />
+                    <div class='img-info'>
+                        <!-- <h4>Image Title 8</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+                    </div>
+                </a>
+            </div>
+
+            <div class="gallery_product col-sm-3 col-xs-6 filter category3">
+                <a class="fancybox" rel="ligthbox" href="/images/speaker bhaskar.jpg">
+                    <img class="img-responsive" alt="" src="/images/speaker bhaskar.jpg" />
+                    <div class='img-info'>
+                        <!-- <h4>Image Title 9</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+                    </div>
+                </a>
+            </div>
+
+            <div class="gallery_product col-sm-3 col-xs-6 filter category1">
+                <a class="fancybox" rel="ligthbox" href="/images/Afzal sir to class.jpg">
+                    <img class="img-responsive" alt="" src="/images/Afzal sir to class.jpg" />
+                    <div class='img-info'>
+                        <!-- <h4>Image Title 10</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+                    </div>
+                </a>
+            </div>
+
+            <div class="gallery_product col-sm-3 col-xs-6 filter category2">
+                <a class="fancybox" rel="ligthbox" href="/images/group photo 4.jpg">
+                    <img class="img-responsive" alt="" src="/images/group photo 4.jpg" />
+                    <div class='img-info'>
+                        <!-- <h4>Image Title 11</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+                    </div>
+                </a>
+            </div>
+
+            <div class="gallery_product col-sm-3 col-xs-6 filter category3">
+                <a class="fancybox" rel="ligthbox" href="/images/speaker.jpg">
+                    <img class="img-responsive" alt="" src="/images/speaker.jpg" />
+                    <div class='img-info'>
+                        <!-- <h4>Image Title 12</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+                    </div>
+                </a>
+            </div>
+
+        
+
+		</div>
+	</div>
+</section>
+<script>
+    /*	gallery */
+$(document).ready(function(){
+
+$(".filter-button").click(function(){
+    var value = $(this).attr('data-filter');
+    
+    if(value == "all")
+    {
+        $('.filter').show('1000');
+    }
+    else
+    {
+        $(".filter").not('.'+value).hide('3000');
+        $('.filter').filter('.'+value).show('3000');
+        
+    }
+
+            if ($(".filter-button").removeClass("active")) {
+        $(this).removeClass("active");
+        }
+            $(this).addClass("active");
+        });
+});
+/*	end gallery */
+
+$(document).ready(function(){
+$(".fancybox").fancybox({
+    openEffect: "none",
+    closeEffect: "none"
+});
+});
+
+
+</script>
+</body>
+
+	
